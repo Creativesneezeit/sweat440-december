@@ -1,0 +1,9 @@
+{
+  "name": "sweat440-december-creative",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SWEAT440 December 2026 creative presentation",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=18" }
+}

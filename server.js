@@ -10,7 +10,7 @@ const PASSWORD = process.env.SITE_PASSWORD || '';
 const TYPES = {
   '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.js': 'text/javascript',
   '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.png': 'image/png', '.svg': 'image/svg+xml',
-  '.mp4': 'video/mp4', '.ttf': 'font/ttf', '.woff2': 'font/woff2',
+  '.mp4': 'video/mp4', '.pdf': 'application/pdf', '.ttf': 'font/ttf', '.woff2': 'font/woff2',
 };
 
 function authorized(req) {

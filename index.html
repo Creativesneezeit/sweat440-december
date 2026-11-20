@@ -246,6 +246,35 @@ a.day{text-decoration:none}
 .pmax .pmlogos .pmn{width:auto;align-self:flex-start}
 .pmax .lsq{width:200px;height:200px}.pmax .lls{width:400px;height:100px}
 
+/* local studio calendar */
+.lcal .lgrid{gap:8px;margin-top:28px}
+.lcal .lhd{display:flex;flex-direction:column;gap:2px}
+.lcal .lth{font-size:24px;margin:0;color:var(--blue);line-height:1.1}
+.lcal .day{padding:8px 12px;gap:4px}
+.lcal .day .d{font-size:28px}
+.lcal .lday{background:#1C2129;border:2px solid transparent}
+.lcal .lday .d{color:var(--paper)}
+.lcal .lday .t{font-size:24px;line-height:1.1}
+.lcal .lday.corp{border-color:var(--blue)}
+.lcal .key-corp{color:var(--blue)}
+.lcal .lnote{font-size:24px;color:var(--soft);margin:18px 0 0}
+
+/* local studio idea tables */
+.ltab{background:var(--ink2)}
+.ltab .lhdr{display:grid;grid-template-columns:230px 300px 1fr;gap:20px;margin-top:36px;padding:0 20px}
+.ltab .lhdr p{font-family:'ALS Hauss Bold',Arial,sans-serif;font-size:24px;letter-spacing:0.14em;color:var(--soft);margin:0}
+.ltab .ltable{display:flex;flex-direction:column;gap:8px;margin-top:12px}
+.ltab .lrow{display:grid;grid-template-columns:230px 300px 1fr;gap:20px;align-items:start;background:#1C2129;border:2px solid transparent;border-radius:10px;padding:10px 18px}
+.ltab .lrow.lnat{border-color:var(--blue)}
+.ltab .lc1{display:flex;flex-direction:column;gap:2px}
+.ltab .ld{font-family:'Prohibition',Arial,sans-serif;font-size:28px;margin:0;color:var(--paper);line-height:1}
+.ltab .lt{font-size:24px;margin:0;color:var(--blue);line-height:1.1}
+.ltab .li{font-family:'ALS Hauss Bold',Arial,sans-serif;font-size:24px;margin:0;color:var(--paper);line-height:1.15}
+.ltab .lw{font-size:24px;margin:0;color:#D6DBE1;line-height:1.2;font-variant-ligatures:none;font-feature-settings:"liga" 0,"calt" 0,"dlig" 0}
+.ltab .lw b{color:var(--neon);font-family:'ALS Hauss Bold',Arial,sans-serif;font-weight:400;letter-spacing:0.06em}
+.ltab .key-corp{color:var(--blue)}
+.lcal .lsheet{font-family:'ALS Hauss Bold',Arial,sans-serif;color:var(--neon);text-decoration:none;letter-spacing:0.06em}
+
 </style></head><body><div id="view"><div id="stage">
 <section id="cover" class="cover" data-transition="fade">
 <div class="copy">
@@ -262,7 +291,6 @@ a.day{text-decoration:none}
 <div class="adsq"><img src="a/82e2cb760693d1219939d9d5d1140c70.jpg" alt="AD 2 · NO ONE NEEDS ANYTHING" style="width:420px;height:420px;object-fit:cover;border-radius:6px"><p class="stl">AD 2 · NO ONE NEEDS ANYTHING</p></div>
 <div class="adsq"><img src="a/08371bb5e44a39cc33794a56007b181d.jpg" alt="AD 3 · MADE 4 REAL LIFE" style="width:420px;height:420px;object-fit:cover;border-radius:6px"><p class="stl">AD 3 · MADE 4 REAL LIFE</p></div>
 </div>
-<p class="internal"><a href="https://www.canva.com/d/4sNOzQPFfu-ME8d" target="_blank" style="color:inherit;text-decoration:none">Internal use only</a></p>
 
 </section>
 
@@ -277,11 +305,10 @@ a.day{text-decoration:none}
 </div>
 <div class="col pcol"><h3>PRIMARY TEXT</h3>
 <div class="cbox p"><p class="cn">PRIMARY TEXT 1</p><p class="ct filled">You run everything. This runs for you. 💪 SWEAT440 is a 40-minute, full-body workout across four stations, with a new class starting every 10 minutes, so it fits around work, school pickup and everything else on your list. Coaches guide every rep, and every station modifies to your level. Your first class is free*, so book it today.<br>*Terms and conditions apply.</p></div>
-<div class="cbox p"><p class="cn">PRIMARY TEXT 2</p><p class="ct filled">Forty minutes where no one needs anything from you. No emails, no errands, no one asking what’s for dinner. Just four stations, a coach in your corner and a full-body workout that’s done before your next thing starts. Every level is welcome, and you’ll leave stronger than you walked in. Try your first class free*.<br>*Terms and conditions apply.</p></div>
+<div class="cbox p"><p class="cn">PRIMARY TEXT 2</p><p class="ct filled">Forty minutes where no one needs anything from you. No emails, no errands, no one asking what’s for dinner. Just four stations, a coach in your corner and a full-body workout that’s done before your next thing starts, with a new class starting every 10 minutes. Every level is welcome, and you’ll leave stronger than you walked in. Try your first class free*.<br>*Terms and conditions apply.</p></div>
 <div class="cbox p"><p class="cn">PRIMARY TEXT 3</p><p class="ct filled">Your to-do list can wait 40 minutes. Put yourself on the calendar: four stations, full body, with a new class starting every 10 minutes, so there’s always a spot waiting. Strength, cardio and core in one session, coached from start to finish. Come as you are, because your first class at SWEAT440 is free*.<br>*Terms and conditions apply.</p></div>
 </div>
 </div>
-<p class="internal"><a href="https://www.canva.com/d/4sNOzQPFfu-ME8d" target="_blank" style="color:inherit;text-decoration:none">Internal use only</a></p>
 
 </section>
 
@@ -292,7 +319,6 @@ a.day{text-decoration:none}
 <div class="vt"><img src="a/1c2fa1aa1cd4d1cf1bc62211c166786d.jpg" data-video="a/7ab5aee55a28cb31a0c866501b395cbb.mp4" alt="Vertical ad 2: 40 minutes where no one needs anything from you" style="width:340px;height:604px;object-fit:cover;border-radius:18px"><p class="stl">EVERGREEN · AD 2 · 40 MINUTES</p></div>
 <div class="vt"><img src="a/055b6c9a87a0d34d997cd71072c4faaf.jpg" data-video="a/dbd741caffa2f30727a68c3cba48abf3.mp4" alt="Vertical ad 3: Made 4 real life" style="width:340px;height:604px;object-fit:cover;border-radius:18px"><p class="stl">EVERGREEN · AD 3 · MADE 4 REAL LIFE</p></div>
 </div>
-<p class="internal"><a href="https://www.canva.com/d/4sNOzQPFfu-ME8d" target="_blank" style="color:inherit;text-decoration:none">Internal use only</a></p>
 
 </section>
 
@@ -347,10 +373,9 @@ a.day{text-decoration:none}
 <h2>GIVE YOURSELF 40 MINUTES.</h2>
 
 <div class="spacer"></div>
-<div class="cap"><h3>CAPTION</h3><p class="body">It’s Giving Tuesday, and you’re on the list too. The best gift this season? Forty minutes that are all yours. Four stations, one full-body workout, and a new class every 10 minutes, so it fits even the busiest December day. #GivingTuesday #Made4Busy</p></div>
+<div class="cap"><h3>CAPTION</h3><p class="body">It’s Giving Tuesday, and you’re on the list too. The best gift this season? Forty minutes that are all yours. Four stations, one full-body workout, and a new class every 10 minutes, so it fits even the busiest December day. #Made4Busy #NeverLate</p></div>
 <div class="links"><p class="btn">TEMPLATE <span class="soon">· link coming</span></p><p class="btn">DOWNLOAD FINAL ASSET <span class="soon">· link coming</span></p></div>
 </div>
-<p class="internal"><a href="https://www.canva.com/d/4sNOzQPFfu-ME8d" target="_blank" style="color:inherit;text-decoration:none">Internal use only</a></p>
 
 </section>
 <section id="p02" class="post" data-transition="fade">
@@ -361,10 +386,9 @@ a.day{text-decoration:none}
 <div class="meta"><p class="tag motion">MOTION · NEON FLICKER</p></div>
 
 <div class="spacer"></div>
-<div class="cap"><h3>CAPTION</h3><p class="body">The holidays don’t have to knock you off track. Forty minutes, four stations, and a new class every 10 minutes. Holiday proof your body, starting today. 🎅 Your Workout. Your Time. #Made4Busy</p></div>
+<div class="cap"><h3>CAPTION</h3><p class="body">The holidays don’t have to knock you off track. Forty minutes, four stations, and a new class every 10 minutes. Holiday proof your body, starting today. 🎅 Your Workout. Your Time. #Made4Busy #NeverLate</p></div>
 <div class="links"><p class="btn">TEMPLATE <span class="soon">· link coming</span></p><p class="btn">DOWNLOAD FINAL ASSET <span class="soon">· link coming</span></p></div>
 </div>
-<p class="internal"><a href="https://www.canva.com/d/4sNOzQPFfu-ME8d" target="_blank" style="color:inherit;text-decoration:none">Internal use only</a></p>
 
 </section>
 <section id="p03" class="post carousel" data-transition="fade">
@@ -382,11 +406,10 @@ a.day{text-decoration:none}
 <div class="meta"><p class="tag">Carousel · 5 slides</p></div>
 </div>
 <div class="right">
-<div class="cap"><h3>CAPTION</h3><p class="body">Busiest month of the year? That’s exactly who we built this for. Early risers, after-bedtime sweaters, real life, you. A class starts every 10 minutes, so a full-body workout fits between gift runs, work parties and everything else on the list. Swipe to find your 40. #Made4Busy</p></div>
+<div class="cap"><h3>CAPTION</h3><p class="body">Busiest month of the year? That’s exactly who we built this for. Early risers, after-bedtime sweaters, real life, you. A class starts every 10 minutes, so a full-body workout fits between gift runs, work parties and everything else on the list. Swipe to find your 40. #Made4Busy #NeverLate</p></div>
 <div class="links"><p class="btn">TEMPLATE <span class="soon">· link coming</span></p><p class="btn">DOWNLOAD FINAL ASSET <span class="soon">· link coming</span></p></div>
 </div>
 </div>
-<p class="internal"><a href="https://www.canva.com/d/4sNOzQPFfu-ME8d" target="_blank" style="color:inherit;text-decoration:none">Internal use only</a></p>
 
 </section>
 
@@ -397,8 +420,8 @@ a.day{text-decoration:none}
 <p class="optlabel">OPTION A · TWO RUNNERS</p>
 </div>
 <div class="opt">
-<img class="art" src="a/922d12123ec533ca61d79e2d9a917cdb.jpg" alt="Option B: Outrun the rush, runner with motion blur" style="width:520px;height:650px;object-fit:cover">
-<p class="optlabel">OPTION B · MOTION BLUR</p>
+<img class="art" src="a/fa0cd49ed546572a6701d863838fe542.jpg" alt="Option B: Outrun the rush, two members with sandbags" style="width:520px;height:650px;object-fit:cover">
+<p class="optlabel">OPTION B · SANDBAG DUO</p>
 </div>
 </div>
 <div class="info">
@@ -406,10 +429,9 @@ a.day{text-decoration:none}
 <h2>OUTRUN THE RUSH.</h2>
 <p class="pick">Pick one: A or B.</p>
 <div class="spacer"></div>
-<div class="cap"><h3>CAPTION</h3><p class="body">Parties, shopping, travel, repeat. The holiday rush is real, and your workout doesn’t have to be the thing that gets cut. Forty minutes, full body, with a new class starting every 10 minutes. Get in, get sweaty, get on with your day. #Made4Busy</p></div>
+<div class="cap"><h3>CAPTION</h3><p class="body">Parties, shopping, travel, repeat. The holiday rush is real, and your workout doesn’t have to be the thing that gets cut. Forty minutes, full body, with a new class starting every 10 minutes. Get in, get sweaty, get on with your day. #Made4Busy #NeverLate</p></div>
 <div class="links"><p class="btn">TEMPLATE <span class="soon">· link coming</span></p><p class="btn">DOWNLOAD FINAL ASSET <span class="soon">· link coming</span></p></div>
 </div>
-<p class="internal" style="bottom:22px"><a href="https://www.canva.com/d/4sNOzQPFfu-ME8d" target="_blank" style="color:inherit;text-decoration:none">Internal use only</a></p>
 
 </section>
 
@@ -420,10 +442,9 @@ a.day{text-decoration:none}
 <h2>SWEAT WITH YOUR PEOPLE.</h2>
 
 <div class="spacer"></div>
-<div class="cap"><h3>CAPTION</h3><p class="body">Your sister’s in town. Your work bestie needs a reset. Your neighbor keeps saying “one day.” The holidays are better with your people, and so is class. Forty minutes, four stations, a new class every 10 minutes. Tag your holiday crew. #Made4Busy</p></div>
+<div class="cap"><h3>CAPTION</h3><p class="body">Your sister’s in town. Your work bestie needs a reset. Your neighbor keeps saying “one day.” The holidays are better with your people, and so is class. Forty minutes, four stations, a new class every 10 minutes. Tag your holiday crew. #Made4Busy #NeverLate</p></div>
 <div class="links"><p class="btn">TEMPLATE <span class="soon">· link coming</span></p><p class="btn">DOWNLOAD FINAL ASSET <span class="soon">· link coming</span></p></div>
 </div>
-<p class="internal"><a href="https://www.canva.com/d/4sNOzQPFfu-ME8d" target="_blank" style="color:inherit;text-decoration:none">Internal use only</a></p>
 
 </section>
 <section id="p06" class="post twoopt" data-transition="fade">
@@ -443,10 +464,9 @@ a.day{text-decoration:none}
 <p class="pick">Pick one: A or B.</p>
 
 <div class="spacer"></div>
-<div class="cap"><h3>CAPTION</h3><p class="body">Three habits for the busiest stretch of the year. Sleep: aim for 7+ hours. Sip: water first, then the holiday drink. Sweat: 40 minutes beats zero minutes. Save this for the weeks ahead. #Made4Busy</p></div>
+<div class="cap"><h3>CAPTION</h3><p class="body">Three habits for the busiest stretch of the year. Sleep: aim for 7+ hours. Sip: water first, then the holiday drink. Sweat: 40 minutes beats zero minutes. Save this for the weeks ahead. #Made4Busy #NeverLate</p></div>
 <div class="links"><p class="btn">TEMPLATE <span class="soon">· link coming</span></p><p class="btn">DOWNLOAD FINAL ASSET <span class="soon">· link coming</span></p></div>
 </div>
-<p class="internal"><a href="https://www.canva.com/d/4sNOzQPFfu-ME8d" target="_blank" style="color:inherit;text-decoration:none">Internal use only</a></p>
 
 </section>
 <section id="p07" class="post" data-transition="fade">
@@ -456,10 +476,9 @@ a.day{text-decoration:none}
 <h2>YOUR HYPE CREW.</h2>
 
 <div class="spacer"></div>
-<div class="cap"><h3>CAPTION</h3><p class="body">Every class, every station, there’s a coach in your corner: counting you down, fixing your form, and cheering the last rep like it’s the first. Holiday chaos included. Shout out the SWEAT440 coach who keeps you showing up. #Made4Busy</p></div>
+<div class="cap"><h3>CAPTION</h3><p class="body">Every class, every station, there’s a coach in your corner: counting you down, fixing your form, and cheering the last rep like it’s the first. Holiday chaos included. Shout out the SWEAT440 coach who keeps you showing up. #Made4Busy #NeverLate</p></div>
 <div class="links"><p class="btn">TEMPLATE <span class="soon">· link coming</span></p><p class="btn">DOWNLOAD FINAL ASSET <span class="soon">· link coming</span></p></div>
 </div>
-<p class="internal"><a href="https://www.canva.com/d/4sNOzQPFfu-ME8d" target="_blank" style="color:inherit;text-decoration:none">Internal use only</a></p>
 
 </section>
 <section id="p08" class="post" data-transition="fade">
@@ -469,10 +488,9 @@ a.day{text-decoration:none}
 <h2>MADE 4 LUNCH BREAKS.</h2>
 
 <div class="spacer"></div>
-<div class="cap"><h3>CAPTION</h3><p class="body">Lunch break, but make it full body. Forty minutes, four stations, and back to your day with time to spare. Classes start every 10 minutes. #Made4Busy</p></div>
+<div class="cap"><h3>CAPTION</h3><p class="body">Lunch break, but make it full body. Forty minutes, four stations, and back to your day with time to spare. Classes start every 10 minutes. #Made4Busy #NeverLate</p></div>
 <div class="links"><p class="btn">TEMPLATE <span class="soon">· link coming</span></p><p class="btn">DOWNLOAD FINAL ASSET <span class="soon">· link coming</span></p></div>
 </div>
-<p class="internal"><a href="https://www.canva.com/d/4sNOzQPFfu-ME8d" target="_blank" style="color:inherit;text-decoration:none">Internal use only</a></p>
 
 </section>
 <section id="p09" class="post" data-transition="fade">
@@ -482,10 +500,9 @@ a.day{text-decoration:none}
 <h2>ONE MORE BEFORE THE BREAK.</h2>
 
 <div class="spacer"></div>
-<div class="cap"><h3>CAPTION</h3><p class="body">Last Friday before the holiday week. Get one more in before the travel, the parties and the cookie trays take over. Forty minutes, full body, a new class every 10 minutes. Make it count. #Made4Busy</p></div>
+<div class="cap"><h3>CAPTION</h3><p class="body">Last Friday before the holiday week. Get one more in before the travel, the parties and the cookie trays take over. Forty minutes, full body, a new class every 10 minutes. Make it count. #Made4Busy #NeverLate</p></div>
 <div class="links"><p class="btn">TEMPLATE <span class="soon">· link coming</span></p><p class="btn">DOWNLOAD FINAL ASSET <span class="soon">· link coming</span></p></div>
 </div>
-<p class="internal"><a href="https://www.canva.com/d/4sNOzQPFfu-ME8d" target="_blank" style="color:inherit;text-decoration:none">Internal use only</a></p>
 
 </section>
 <section id="p10" class="post" data-transition="fade">
@@ -495,10 +512,9 @@ a.day{text-decoration:none}
 <h2>PEPPERMINT PROTEIN BITES.</h2>
 
 <div class="spacer"></div>
-<div class="cap"><h3>CAPTION</h3><p class="body">10-min prep. A class starts every 10 minutes, and so does snack time. Peppermint Protein Bites: stir together 1 cup rolled oats, ½ cup nut butter, 2 tbsp honey, 1 scoop vanilla protein and 2 tbsp mini dark chocolate chips. Roll into 12 bites and dip the tops in crushed candy cane. Eat now or chill. Save this one for your next holiday party. 🍬 #Made4Busy</p></div>
+<div class="cap"><h3>CAPTION</h3><p class="body">10-min prep. A class starts every 10 minutes, and so does snack time. Peppermint Protein Bites: stir together 1 cup rolled oats, ½ cup nut butter, 2 tbsp honey, 1 scoop vanilla protein and 2 tbsp mini dark chocolate chips. Roll into 12 bites and dip the tops in crushed candy cane. Eat now or chill. Save this one for your next holiday party. 🍬 #Made4Busy #NeverLate</p></div>
 <div class="links"><p class="btn">TEMPLATE <span class="soon">· link coming</span></p><p class="btn">DOWNLOAD FINAL ASSET <span class="soon">· link coming</span></p></div>
 </div>
-<p class="internal"><a href="https://www.canva.com/d/4sNOzQPFfu-ME8d" target="_blank" style="color:inherit;text-decoration:none">Internal use only</a></p>
 
 </section>
 <section id="p11" class="post" data-transition="fade">
@@ -508,10 +524,9 @@ a.day{text-decoration:none}
 <h2>MADE 4 BUSY MOMS.</h2>
 
 <div class="spacer"></div>
-<div class="cap"><h3>CAPTION</h3><p class="body">Making the list. Checking it twice. Wrapping after bedtime, baking for the cookie swap, front row at the holiday concert, teacher gifts, drop-off, pick-up, repeat. Busy moms run the whole season, so we built a workout that fits around it: 40 minutes, full body, with a new class starting every 10 minutes. Your Workout. Your Time. #Made4Busy</p></div>
+<div class="cap"><h3>CAPTION</h3><p class="body">Making the list. Checking it twice. Wrapping after bedtime, baking for the cookie swap, front row at the holiday concert, teacher gifts, drop-off, pick-up, repeat. Busy moms run the whole season, so we built a workout that fits around it: 40 minutes, full body, with a new class starting every 10 minutes. Your Workout. Your Time. #Made4Busy #NeverLate</p></div>
 <div class="links"><p class="btn">TEMPLATE <span class="soon">· link coming</span></p><p class="btn">DOWNLOAD FINAL ASSET <span class="soon">· link coming</span></p></div>
 </div>
-<p class="internal"><a href="https://www.canva.com/d/4sNOzQPFfu-ME8d" target="_blank" style="color:inherit;text-decoration:none">Internal use only</a></p>
 
 </section>
 <section id="p12" class="post twoopt" data-transition="fade">
@@ -521,7 +536,7 @@ a.day{text-decoration:none}
 <p class="optlabel">OPTION A · GIFT UNWRAP</p>
 </div>
 <div class="opt">
-<img class="art" src="a/3118333e161d051c4c4b4664f965e351.jpg" data-video="a/de28f3df106c2141e743c069c14c3bf3.mp4" alt="Option B: flocked tree with twinkling blue and soft gold lights" style="width:520px;height:650px;object-fit:cover">
+<img class="art" src="a/54f4911a6756a546b94e671986ad51a8.jpg" data-video="a/69014fb7026c691676cf96e06c28c974.mp4" alt="Option B: flocked tree with twinkling lights and a SWEAT440 shield ornament" style="width:520px;height:650px;object-fit:cover">
 <p class="optlabel">OPTION B · BLUE-LIT TREE</p>
 </div>
 </div>
@@ -530,10 +545,9 @@ a.day{text-decoration:none}
 <h2>HAPPY HOLIDAYS.</h2>
 <p class="pick">Pick one: A or B.</p>
 <div class="spacer"></div>
-<div class="cap"><h3>CAPTION</h3><p class="body">Happy holidays from all of us at SWEAT440. 🎄 Thank you for showing up for yourself this year. #YouMadeIt</p></div>
+<div class="cap"><h3>CAPTION</h3><p class="body">Happy holidays from all of us at SWEAT440. 🎄 Thank you for showing up for yourself this year. #Made4Busy #NeverLate</p></div>
 <div class="links"><p class="btn">TEMPLATE <span class="soon">· link coming</span></p><p class="btn">DOWNLOAD FINAL ASSET <span class="soon">· link coming</span></p></div>
 </div>
-<p class="internal"><a href="https://www.canva.com/d/4sNOzQPFfu-ME8d" target="_blank" style="color:inherit;text-decoration:none">Internal use only</a></p>
 
 </section>
 
@@ -544,10 +558,9 @@ a.day{text-decoration:none}
 <h2>FINISH AS THE HERO.</h2>
 
 <div class="spacer"></div>
-<div class="cap"><h3>CAPTION</h3><p class="body">This year you showed up. Every class, every station, every rep. Finish 2026 as the hero of your own story. All levels welcome; every station modifies. #YouMadeIt</p></div>
+<div class="cap"><h3>CAPTION</h3><p class="body">This year you showed up. Every class, every station, every rep. Finish 2026 as the hero of your own story. All levels welcome; every station modifies. #Made4Busy #NeverLate</p></div>
 <div class="links"><p class="btn">TEMPLATE <span class="soon">· link coming</span></p><p class="btn">DOWNLOAD FINAL ASSET <span class="soon">· link coming</span></p></div>
 </div>
-<p class="internal"><a href="https://www.canva.com/d/4sNOzQPFfu-ME8d" target="_blank" style="color:inherit;text-decoration:none">Internal use only</a></p>
 
 </section>
 <section id="p14" class="post twoopt" data-transition="fade">
@@ -567,10 +580,9 @@ a.day{text-decoration:none}
 <div class="meta"><p class="tag motion">MOTION</p></div>
 <p class="pick">Pick one: A or B.</p>
 <div class="spacer"></div>
-<div class="cap"><h3>CAPTION</h3><p class="body">No plans this week? Perfect. The days between the holidays are the easiest ones to claim. Pick a time, any time: a class starts every 10 minutes. #Made4Busy</p></div>
+<div class="cap"><h3>CAPTION</h3><p class="body">No plans this week? Perfect. The days between the holidays are the easiest ones to claim. Pick a time, any time: a class starts every 10 minutes. #Made4Busy #NeverLate</p></div>
 <div class="links"><p class="btn">TEMPLATE <span class="soon">· link coming</span></p><p class="btn">DOWNLOAD FINAL ASSET <span class="soon">· link coming</span></p></div>
 </div>
-<p class="internal"><a href="https://www.canva.com/d/4sNOzQPFfu-ME8d" target="_blank" style="color:inherit;text-decoration:none">Internal use only</a></p>
 
 </section>
 <section id="p15" class="post twoopt threeopt" data-transition="fade">
@@ -593,10 +605,9 @@ a.day{text-decoration:none}
 <h2>FINISH STRONG.</h2>
 <p class="pick">Pick one: A, B or C.</p>
 <div class="spacer"></div>
-<div class="cap"><h3>CAPTION</h3><p class="body">Finish strong. Then reset. Thank you for an incredible 2026, and we’ll see you in the new year. 🥂 #YouMadeIt</p></div>
+<div class="cap"><h3>CAPTION</h3><p class="body">Finish strong. Then reset. Thank you for an incredible 2026, and we’ll see you in the new year. 🥂 #Made4Busy #NeverLate</p></div>
 <div class="links"><p class="btn">TEMPLATE <span class="soon">· link coming</span></p><p class="btn">DOWNLOAD FINAL ASSET <span class="soon">· link coming</span></p></div>
 </div>
-<p class="internal"><a href="https://www.canva.com/d/4sNOzQPFfu-ME8d" target="_blank" style="color:inherit;text-decoration:none">Internal use only</a></p>
 
 </section>
 
@@ -612,7 +623,6 @@ a.day{text-decoration:none}
 <div class="st"><img src="a/a427554281c3e056665214b224c2bc37.jpg" data-video="a/d1d33c9ca2651ebe3b16ca04fc63b9ac.mp4" alt="Story 2: The best 40 minutes of your day" style="width:300px;height:533px;object-fit:cover;border-radius:18px"><p class="stl">STORY 2 · BEST 40 MINUTES</p><p class="std">TUE · DEC 15</p></div>
 <div class="st"><img src="a/984df62370d670a7c381708f3d07cb5e.jpg" data-video="a/32f9d34033f5182f5bc725fc1a6e935d.mp4" alt="Story 3: Made 4 busy" style="width:300px;height:533px;object-fit:cover;border-radius:18px"><p class="stl">STORY 3 · MADE 4 BUSY</p><p class="std">SUN · DEC 27</p></div>
 </div>
-<p class="internal"><a href="https://www.canva.com/d/4sNOzQPFfu-ME8d" target="_blank" style="color:inherit;text-decoration:none">Internal use only</a></p>
 
 </section>
 
@@ -639,6 +649,13 @@ a.day{text-decoration:none}
 <div class="grid"><p class="dow">SUN</p><p class="dow">MON</p><p class="dow">TUE</p><p class="dow">WED</p><p class="dow">THU</p><p class="dow">FRI</p><p class="dow">SAT</p><div class="day off"><p class="d">29</p><p class="t"></p></div><div class="day off"><p class="d">30</p><p class="t"></p></div><div class="day on"><p class="d">1</p><p class="t">Giving Tuesday</p></div><div class="day on"><p class="d">2</p><p class="t">Theme opener</p></div><div class="day story"><p class="d">3</p><p class="t">Story 1 · video</p></div><div class="day on"><p class="d">4</p><p class="t">Made 4 busy season</p></div><div class="day"><p class="d">5</p><p class="t"></p></div><div class="day"><p class="d">6</p><p class="t"></p></div><div class="day on"><p class="d">7</p><p class="t">Holiday rush</p></div><div class="day"><p class="d">8</p><p class="t"></p></div><div class="day on"><p class="d">9</p><p class="t">Your people</p></div><div class="day"><p class="d">10</p><p class="t"></p></div><div class="day on"><p class="d">11</p><p class="t">Stay-strong tip</p></div><div class="day"><p class="d">12</p><p class="t"></p></div><div class="day"><p class="d">13</p><p class="t"></p></div><div class="day on"><p class="d">14</p><p class="t">Our coaches</p></div><div class="day story"><p class="d">15</p><p class="t">Story 2 · video</p></div><div class="day on"><p class="d">16</p><p class="t">Made 4 lunch breaks</p></div><div class="day"><p class="d">17</p><p class="t"></p></div><div class="day on"><p class="d">18</p><p class="t">One more</p></div><div class="day"><p class="d">19</p><p class="t"></p></div><div class="day"><p class="d">20</p><p class="t"></p></div><div class="day on"><p class="d">21</p><p class="t">10-min recipe</p></div><div class="day"><p class="d">22</p><p class="t"></p></div><div class="day on"><p class="d">23</p><p class="t">Made 4 busy moms</p></div><div class="day"><p class="d">24</p><p class="t"></p></div><div class="day on"><p class="d">25</p><p class="t">Happy holidays</p></div><div class="day"><p class="d">26</p><p class="t"></p></div><div class="day story"><p class="d">27</p><p class="t">Story 3 · video</p></div><div class="day on"><p class="d">28</p><p class="t">Year in Strength</p></div><div class="day"><p class="d">29</p><p class="t"></p></div><div class="day on"><p class="d">30</p><p class="t">In-between days</p></div><div class="day on"><p class="d">31</p><p class="t">Finish strong</p></div><div class="day off"><p class="d">1</p><p class="t"></p></div><div class="day off"><p class="d">2</p><p class="t"></p></div></div>
 
 </section>
+<section id="local-calendar" class="cal lcal" data-transition="fade">
+<div class="cal-head"><h2>LOCAL STUDIO IDEAS</h2><p class="muted">For studio accounts · <span class="key-corp">■</span> national post day, share it to Stories</p></div>
+<div class="grid lgrid"><div class="lhd"><p class="dow">SUN</p><p class="lth">Self-Care</p></div><div class="lhd"><p class="dow">MON</p><p class="lth">Motivation</p></div><div class="lhd"><p class="dow">TUE</p><p class="lth">Tip</p></div><div class="lhd"><p class="dow">WED</p><p class="lth">Wellness</p></div><div class="lhd"><p class="dow">THU</p><p class="lth">Training</p></div><div class="lhd"><p class="dow">FRI</p><p class="lth">Feature</p></div><div class="lhd"><p class="dow">SAT</p><p class="lth">Sweat</p></div><div class="day off"><p class="d">29</p></div><div class="day off"><p class="d">30</p></div><div class="day lday corp"><p class="d">1</p><p class="t">Give yourself 40</p></div><div class="day lday corp"><p class="d">2</p><p class="t">Holiday proof crew</p></div><div class="day lday"><p class="d">3</p><p class="t">1 station, 1 move</p></div><div class="day lday corp"><p class="d">4</p><p class="t">Made 4 busy season</p></div><div class="day lday"><p class="d">5</p><p class="t">Made 4 Saturdays</p></div><div class="day lday"><p class="d">6</p><p class="t">Cool-down stretch</p></div><div class="day lday corp"><p class="d">7</p><p class="t">Next class in 10</p></div><div class="day lday"><p class="d">8</p><p class="t">Made 4 party season</p></div><div class="day lday corp"><p class="d">9</p><p class="t">Made 4 your people</p></div><div class="day lday"><p class="d">10</p><p class="t">Coach form fix</p></div><div class="day lday corp"><p class="d">11</p><p class="t">Made 4 real life</p></div><div class="day lday"><p class="d">12</p><p class="t">Ugly sweater class</p></div><div class="day lday"><p class="d">13</p><p class="t">Rest is training</p></div><div class="day lday corp"><p class="d">14</p><p class="t">Made 4 early birds</p></div><div class="day lday"><p class="d">15</p><p class="t">Never late: pack tonight</p></div><div class="day lday corp"><p class="d">16</p><p class="t">Made 4 lunch breaks</p></div><div class="day lday"><p class="d">17</p><p class="t">4 stations in 40</p></div><div class="day lday corp"><p class="d">18</p><p class="t">One more before the break</p></div><div class="day lday"><p class="d">19</p><p class="t">Made 4 Saturdays, part 2</p></div><div class="day lday"><p class="d">20</p><p class="t">Shortest day stretch</p></div><div class="day lday corp"><p class="d">21</p><p class="t">Holiday hours</p></div><div class="day lday"><p class="d">22</p><p class="t">10-min travel workout</p></div><div class="day lday corp"><p class="d">23</p><p class="t">Made 4 busy moms</p></div><div class="day lday"><p class="d">24</p><p class="t">Christmas Eve class</p></div><div class="day lday corp"><p class="d">25</p><p class="t">From our team to you</p></div><div class="day lday"><p class="d">26</p><p class="t">Never late to get back</p></div><div class="day lday"><p class="d">27</p><p class="t">Rest up</p></div><div class="day lday corp"><p class="d">28</p><p class="t">Finish as the hero</p></div><div class="day lday"><p class="d">29</p><p class="t">Set one real goal</p></div><div class="day lday corp"><p class="d">30</p><p class="t">No plans? Perfect.</p></div><div class="day lday corp"><p class="d">31</p><p class="t">Finish strong</p></div><div class="day off"><p class="d">1</p></div><div class="day off"><p class="d">2</p></div></div>
+<p class="lnote">Brand lines: Made 4 ___ · a new class every 10 minutes · Your Workout. Your Time. · end with #Made4Busy #NeverLate. <a class="lsheet" href="https://docs.google.com/spreadsheets/d/1v8OceMI6gyNCYd19xzTY18bJ5KmA3LqCoRYlwLp6BQs/edit" target="_blank">OPEN THE FULL SHEET →</a> what to film, format and a caption for every day.</p>
+
+</section>
+
 </div></div>
 <div id="ui"><button id="prev" aria-label="Previous slide">&#8592;</button><span id="count"></span><button id="next" aria-label="Next slide">&#8594;</button><button id="fs">Full screen</button></div>
 <script>

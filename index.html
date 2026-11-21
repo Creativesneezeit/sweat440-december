@@ -667,7 +667,7 @@ var stage=document.getElementById('stage'),secs=[].slice.call(stage.children),cu
 // One video on a slide: plays on its own, muted, with a sound button.
 // Several videos on a slide: each waits behind a play button; playing one stops the others.
 secs.forEach(function(sec){
-  var wraps=[].slice.call(sec.querySelectorAll('.vwrap')),multi=wraps.length>1;
+  var wraps=[].slice.call(sec.querySelectorAll('.vwrap')),multi=wraps.length>0;
   sec.dataset.multi=multi?'1':'';
   wraps.forEach(function(w){
     var v=w.querySelector('video');
